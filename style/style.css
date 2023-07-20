@@ -1,0 +1,304 @@
+body {
+	display: flex;
+	justify-content: center;
+	height: 150vh;
+	font-family: "Roboto Slab", serif;
+}
+
+hr {
+	color: #fbd85d;
+	background-color: #fbd85d;
+	width: 90%;
+	height: 5px;
+	border-width: 0;
+	margin-left: 35px;
+}
+.grid-container {
+	display: grid;
+	width: 1000px;
+	height: 150vh;
+	grid-template-columns: 350px 650px;
+	border: 1px solid black;
+}
+
+.left {
+	background-color: #1b1a17;
+	display: flex;
+	flex-direction: column;
+}
+
+.image-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+.name {
+	position: absolute;
+	background-color: #f1c93b;
+	width: 695px;
+	height: 150px;
+	margin-left: 955px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.name > div {
+	margin-left: 100px;
+}
+.fullname {
+	color: #1b1a17;
+	font-size: 40px;
+	font-weight: 700;
+}
+.job-position {
+	color: #1b1a17;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 auto;
+}
+.image {
+	width: 60%;
+	height: 70%;
+	border: 25px solid white;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+.contact > div > span {
+	color: white;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.contact-img {
+	padding-top: 10px;
+	padding-left: 35px;
+}
+.contact-img > img {
+	float: left;
+	width: 32px;
+	height: 32px;
+	padding-right: 10px;
+}
+
+.education {
+	margin-top: 30px;
+}
+.edu-1,
+.edu-2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.education span {
+	color: white;
+	padding-top: 10px;
+	padding-left: 35px;
+}
+
+.left_header {
+	font-style: normal;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.stream {
+	font-style: normal;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.sub-lines {
+	font-style: normal;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.expertise,
+.skills {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+
+.expertise span {
+	color: white;
+	padding-top: 10px;
+	padding-left: 35px;
+}
+
+.skills span {
+	color: white;
+	padding-top: 10px;
+	padding-left: 35px;
+}
+
+.skills-br {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.bar {
+	border: 2px solid #fbd85d;
+	width: 90%;
+	margin-left: 35px;
+	border-radius: 10px;
+	border-left: 0;
+	border-right: 0;
+}
+
+.bar > div {
+	width: 0;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #fbd85d;
+}
+
+.bar-abap {
+	animation: abap-fill 2s forwards;
+}
+
+.right-container {
+	display: grid;
+	gap: 2px;
+	grid-template-rows: repeat(10, 1fr);
+	height: 100%;
+}
+
+.three {
+	/* display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start; */
+	grid-row: 3 / span 5;
+}
+
+.nine {
+	grid-row: 9 / span 2;
+}
+.experience {
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
+
+.three > hr {
+	margin-left: 35px;
+}
+
+/* Time line CSS*/
+/* Timeline Container */
+.timeline {
+	padding-top: 10px;
+	padding-left: 35px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+	border-left: 2px solid #333;
+	width: 100%;
+	padding-left: 10px;
+}
+
+/* Card container */
+.card {
+	/* position: relative; */
+	color: gray;
+	border-radius: 8px;
+	width: 100%;
+}
+
+/* Information about the timeline */
+.info {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	text-align: justify;
+	flex-wrap: wrap;
+	max-width: 94%;
+}
+
+/* Title of the card */
+.designation {
+	font-style: normal;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1b1a17;
+}
+
+.year {
+	position: relative;
+}
+/* Timeline dot  */
+.year::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 999px;
+	border: 3px solid black;
+	left: -20px;
+}
+.jd {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-style: normal;
+	text-justify: auto;
+	font-size: 14px;
+}
+
+.reference {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 35px;
+	height: 45%;
+}
+
+.ref1,
+.ref2 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	justify-content: space-around;
+}
+
+.ref-name {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.ref-pos {
+	font-size: 16px;
+	font-weight: 500;
+}
+.ref-mob,
+.ref-email {
+	font-size: 15px;
+}
+/*For skills line */
+@keyframes abap-fill {
+	100% {
+		width: 60%;
+	}
+}
+.bar-c {
+	animation: c-fill 2s forwards;
+}
+@keyframes c-fill {
+	100% {
+		width: 70%;
+	}
+}
+
+.bar-html {
+	animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+	100% {
+		width: 30%;
+	}
+}
